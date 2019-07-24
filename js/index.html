@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>过渡/动画</title>
+        <style>
+            button {
+                width: 100px;
+                height: 100px;
+                transform: skew(30deg, 20deg);
+                /* transform: translate(20px,30px); */
+                border-radius: 100px;
+                transition: width 2s, height 3s, transform 3s;
+            }
+            button:hover {
+                /* width: 200px;
+            height: 100px; */
+                /* transform: rotate(50deg); */
+                background-color: red;
+            }
+            @keyframes first {
+                20% {
+                    background: red;
+                }
+                to {
+                    background: yellow;
+                }
+            }
+            div {
+                width: 100px;
+                height: 100px;
+                border: 1px solid #000000;
+                background-color: #dddddd;
+                animation: first 5s
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <button>click</button> -->
+        <div>
+            lalalala
+        </div>
+    </body>
+</html>
